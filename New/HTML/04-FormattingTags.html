@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>Text Formatting</h1>
+   
+   <p>
+       <b>JavaScript</b> <br> is a programming &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>language</i> &amp; scripting language that adds interactivity to your website <u>(for example: games, responses when buttons are pressed or data entered in forms, dynamic styling, animation).</u> This article helps you get started with this exciting language and gives you an idea of what is possible.
+   </p>
+   
+   <hr>
+   
+   <p>
+       <strong>JavaScript</strong> <br> is a programming <em>language</em> that adds interactivity to your website <ins>(for example: games, responses when buttons are pressed or data entered in forms, dynamic styling, animation).</ins> This article helps you get started with this exciting language and gives you an idea of what is possible.
+   </p>
+   
+   <hr>
+   
+   <p>
+       JavaScript is a programming language that adds interactivity to your website (for example: games, responses when buttons are pressed or data entered in forms, dynamic styling, animation). This article helps you get started with this exciting language and gives you an idea of what is <del>impossible</del> possible.
+   </p>
+   
+   <hr>
+   
+   <code>
+      <pre>
+public class Test {
+
+   public static void main(String args[]) {
+      int [] numbers = {10, 20, 30, 40, 50};
+
+      for(int x : numbers ) {
+         System.out.print( x );
+         System.out.print(",");
+      }
+      System.out.print("\n");
+      String [] names = {"James", "Larry", "Tom", "Lacy"};
+
+      for( String name : names ) {
+         System.out.print( name );
+         System.out.print(",");
+      }
+   }
+}
+  </pre>
+   </code>
+   
+   <hr>
+   
+      <pre>
+#include &lt;iostream&gt;
+using namespace std;
+ 
+#include &lt;iomanip&gt;
+using std::setw;
+ 
+int main () {
+   int n[ 10 ]; // n is an array of 10 integers
+ 
+   // initialize elements of array n to 0          
+   for ( int i = 0; i &lt; 10; i++ ) {
+      n[ i ] = i + 100; // set element at location i to i + 100
+   }
+	
+   cout &lt;&lt; "Element" &lt;&lt; setw( 13 ) &lt;&lt; "Value" &lt;&lt; endl;
+ 
+   // output each array element's value                      
+   for ( int j = 0; j &lt; 10; j++ ) {
+      cout &lt;&lt; setw( 7 )&lt;&lt; j &lt;&lt; setw( 13 ) &lt;&lt; n[ j ] &lt;&lt; endl;
+   }
+ 
+   return 0;
+}
+   </pre>
+   
+   &copy;Copyrights UI Development
+    
+</body>
+</html>
