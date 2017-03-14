@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+    background-image: url("../../Images/shopping/offer-img2.jpg");
+    background-repeat: no-repeat;
+    /*background-position: 100px 100px;*/
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 300px;
+    background-attachment: fixed;
+}
+#div_1{
+    background-image: url("../../Images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg");
+}
+#div_2 {
+    background-image: url("../../Images/WebImages/thor-the-dark-world-5a.jpg");
+}
+#div_3 {
+    background-image: url("../../Images/WebImages/batman_arkham_knight-1366x768.jpg");
+}
+#div_4 {
+    background-image: url("../../Images/WebImages/Iron-Man-3-2013-Wallpaper.jpg");
+}
+#div_5 {
+    background-image: url("../../Images/WebImages/881L.jpg");
+}

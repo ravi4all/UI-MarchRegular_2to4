@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #div1 p {
+            font-size: 20px;
+            color: red;
+        }
+        #div1 > p {
+            color: blueviolet;
+        }
+        #div1 + p {
+            font-size: 24px;
+            color: firebrick;
+        }
+        ul li {
+            font-size: 18px;
+        }
+        ul li:first-child{
+            background-color: aqua;
+        }
+        ul li:last-child {
+            background-color: orange;
+        }
+        ul li:nth-child(3) {
+            background-color: deepskyblue;
+        }
+        ul li:nth-child(odd){
+            background-color: darkslategrey;
+        }
+        ul li:nth-child(even) {
+            background-color: darksalmon;
+        }
+        ul li:hover {
+            font-size: 24px;
+        }
+        form input[type="text"] {
+            height: 30px;
+            background-color: cadetblue;
+            width: 300px;
+            border: 1px solid cadetblue;
+        }
+        form input[type="text"]:focus {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Advance Selectors</h1>
+   
+   <form action="#">
+       <input type="text">
+   </form>
+   
+   <div id="div1">
+       <p>This paragraph is child of div1</p>
+       <p>This paragraph is child of div1</p>
+       <p>This paragraph is child of div1</p>
+       <div class="nested">
+           <p>This paragraph is child of div1</p>
+           <p>This paragraph is child of div1</p>
+           <p>This paragraph is child of div1</p>
+       </div>
+   </div>
+   <p>This paragraph is the immediate sibling of div1</p>
+   
+   <ul>
+       <li><a href="#">ListItem_1</a></li>
+       <li><a href="#">ListItem_2</a></li>
+       <li><a href="#">ListItem_3</a></li>
+       <li><a href="#">ListItem_4</a></li>
+       <li><a href="#">ListItem_5</a></li>
+       <li><a href="#">ListItem_6</a></li>
+   </ul>
+    
+</body>
+</html>

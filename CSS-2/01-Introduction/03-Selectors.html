@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #div1, #div2, #div3 {
+            height: 100px;
+        }
+        .nested {
+            height: 50px;
+            /*background-color: deepskyblue;*/
+        }
+        /*div {
+            height: 100px;
+            background-color: firebrick;
+        }*/
+        #div1 {
+            width: 300px;
+        }
+        #div2 {
+            width: 600px;
+        }
+        #div3 {
+            width: 900px;
+        }
+        #div4 {
+            width: 1200px;
+        }
+        .group {
+            background-color: darkviolet;
+        }
+        #div3.group {
+            height: 120px;
+        }
+        #div2, #div4 {
+            background-color: cadetblue;
+        }
+        #div1 .nested, #div3 .nested {
+            background-color: deepskyblue;
+        }
+        #div4 .nested {
+            height: auto;
+        }
+        #div4 p {
+            font-size: 20px;
+            color: red;
+        }
+        #div4 p a {
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Selectors</h1>
+   
+   <div id="div1" class="group">
+       <div class="nested"></div>
+   </div>
+   <hr>
+   <div id="div2">
+       <div class="nested"></div>
+   </div>
+   <hr>
+   <div id="div3" class="group">
+       <div class="nested"></div>
+   </div>
+   <hr>
+   <div id="div4">
+      <p>This is my first paragraph with CSS <a href="#">Read More</a></p>
+      <p>This is my first paragraph with CSS <a href="#">Read More</a></p>
+      <p>This is my first paragraph with CSS <a href="#">Read More</a></p>
+      <p>This is my first paragraph with CSS <a href="#">Read More</a></p>
+       <div class="nested">
+           <p>This is my first paragraph wit CSS</p>
+          <p>This is my first paragraph wit CSS</p>
+          <p>This is my first paragraph wit CSS</p>
+          <p>This is my first paragraph wit CSS</p>
+       </div>
+   </div>
+    
+</body>
+</html>
