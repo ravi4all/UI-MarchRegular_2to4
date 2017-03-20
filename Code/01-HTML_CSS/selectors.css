@@ -1,0 +1,35 @@
+#div1, #div3 {
+    width: 200px;
+}
+
+#div1 {
+    background-color: dodgerblue;
+}
+#div2 {
+    width: 400px;
+    background-color: cadetblue;
+}
+#div3 {
+    background-color: darkslateblue
+}
+#div4 {
+    width: 800px;
+    background-color: darkmagenta;
+}
+
+.common {
+    height: 100px;
+}
+
+.nested {
+    height: 50px;
+}
+
+#div2 .nested, #div4 .nested {
+    background-color: darkorange;
+}
+
+#div3.common .nested{
+    background-image: url("../../Images/WebImages/Terminator002.jpg");
+    background-size: 100% 100%;
+}

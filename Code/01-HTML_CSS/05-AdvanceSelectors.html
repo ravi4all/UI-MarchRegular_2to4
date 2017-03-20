@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #div1 p {
+            color: rebeccapurple;
+        }
+        #div1 > p {
+            font-size: 20px;
+        }
+        #div1 + p {
+            color: firebrick;
+        }
+        div img {
+            width: 180px;
+        }
+        #images {
+            width: 180px;
+            height: 120px;
+            overflow: hidden;
+        }
+        .img2, .img3, .img4 {
+            display: none;
+        }
+        #images:hover .img2, #images:hover .img3, #images:hover .img4 {
+            display: inline-block;
+        } 
+        #images:hover {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Advance Selectors</h1>
+   
+   <!--div#div1>(p*4>{This paragraph is child of div1})+(div.nested>p*3>{This paragraph is child of nested})-->
+   
+   <div id="div1">
+       <p>This paragraph is child of div1</p>
+       <p>This paragraph is child of div1</p>
+       <p>This paragraph is child of div1</p>
+       <p>This paragraph is child of div1</p>
+       <div class="nested">
+           <p>This paragraph is child of nested</p>
+           <p>This paragraph is child of nested</p>
+           <p>This paragraph is child of nested</p>
+       </div>
+   </div>
+   <p>This paragraph is sibling of div1</p>
+   
+   <div id="images">
+       <img src="../../Images/WebImages/avengers-thor.jpg" class="img1" alt="">
+       <img src="../../Images/WebImages/avengers-thor.jpg" class="img2" alt="">
+       <img src="../../Images/WebImages/avengers-thor.jpg" class="img3" alt="">
+       <img src="../../Images/WebImages/avengers-thor.jpg" class="img4" alt="">
+   </div>
+    
+</body>
+</html>
