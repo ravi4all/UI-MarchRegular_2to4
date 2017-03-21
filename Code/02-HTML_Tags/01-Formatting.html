@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>HTML Formatting Tags</h1>
+   
+   <pre>
+   <code>
+#include &lt;iostream&gt;
+using namespace std;
+ 
+#include &lt;iomanip>
+using std::setw;
+ 
+int main () {
+   int n[ 10 ]; // n is an array of 10 integers
+ 
+   // initialize elements of array n to 0          
+   for ( int i = 0; i &lt; 10; i++ ) {
+      n[ i ] = i + 100; // set element at location i to i + 100
+   }
+	
+   cout &lt;&lt; "Element" &lt;&lt; setw( 13 ) &lt;&lt; "Value" &lt;&lt; endl;
+ 
+   // output each array element's value                      
+   for ( int j = 0; j &lt; 10; j++ ) {
+      cout &lt;&lt; setw( 7 )&lt;&lt; j &lt;&lt; setw( 13 ) &lt;&lt; n[ j ] &lt;&lt; endl;
+   }
+ 
+   return 0;
+}
+  </code>
+   </pre>
+   
+   <p>&copy;
+       This is a paragraph. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <br> <a href="#">Read More</a>
+   </p>
+   <hr>
+   <p>&copy;
+       This is a paragraph.
+       <br> <a href="#">Read More</a>
+   </p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
