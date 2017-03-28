@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*body {
+            cursor: wait;
+        }*/
+        p {
+            display: inline-block;
+            position: relative;
+            border: 1px solid;
+        }
+        p:after {
+            content: "";
+            background-image: url("../../Images/slide-next-btn.png");
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            right: -50px;
+            cursor: pointer;
+        }
+        .borders {
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            position: relative;
+        }
+        .borders:after {
+            content: "";
+            /*border: 40px solid;
+            border-width: 40px 60px 80px 100px;
+            border-color: red transparent  darkorange;
+            border-top: none;*/
+            
+            border-left: 60px dotted green;
+            border-top: 30px dotted transparent;
+            border-bottom: 30px dotted transparent;
+            
+            position: absolute;
+            right: -400px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Using After Before</h1>
+   
+   <p>This is some article</p>
+   <br>
+   <p>This is some article</p>
+   <br>
+   <p>This is some article</p>
+   <br>
+   <p>This is some article</p>
+   <br>
+    <p>This is some article</p>
+    <br>
+    <p>This is some article</p>
+    
+    <div class="borders"></div>
+    
+</body>
+</html>
