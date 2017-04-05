@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        #banner {
+            position: relative;
+            text-align: center;
+            min-height: 400px;
+        }
+        #banner img {
+            width: 100%;
+            min-height: 400px;
+        }
+        #banner .wrapper {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+        }
+        #banner .inner-wrapper {
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
+        #banner .description {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        #banner h1 {
+            color: #fff;
+        }
+        .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(255,100,100);
+            left: 0px;
+            top: 0px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+   
+   <div id="banner">
+       <img src="../../Images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <div class="wrapper">
+           <div class="inner-wrapper">
+                <div class="description">
+           <h1>This is a heading This is a heading This is a heading This is a heading This is a heading This is a heading</h1>
+       </div>
+           </div>
+       </div>
+      <div class="overlay"></div>
+       
+   </div>
+    
+</body>
+</html>
