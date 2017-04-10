@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    background-image: url("../../../Images/images/vector-images/banner1_img.png");
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    /*background-image: url("../../../Images/images/allnewalldifferentmarvel-daredevil-138969.jpg");*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin-bottom: 400px;
+    /*background: red url("../") no-repeat top right/cover fixed*/
+    /*background: color ImageUrl Repeat Position/Size Cover*/
+}
+#div1 {
+    background-image: url("../../../Images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg");
+}
+#div2 {
+    background-image: url("../../../Images/WebImages/batman_arkham_knight-1366x768.jpg");
+}
+#div3 {
+    background-image: url("../../../Images/WebImages/881L.jpg");
+}
+#div4 {
+    background-image: url("../../../Images/shopping/banner.jpg");
+}
+#div5 {
+    background-image: url("../../../Images/WebImages/IMG-20140419-WA0000.jpg");
+}
