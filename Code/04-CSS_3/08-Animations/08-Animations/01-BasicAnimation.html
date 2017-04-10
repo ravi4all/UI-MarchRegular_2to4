@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        overflow: hidden;
+    }
+#div1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    background-repeat: no-repeat;
+    -webkit-animation-name: example1; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-bottom: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+    #div1 img {
+        width: 100%;
+    }
+
+
+/* Standard syntax */
+/*@keyframes example1 {
+    from {background-color: blue; left: 0px; top: 0px;}
+    to {background-color: green; left: 100px; top: 200px;}
+}*/
+    
+/*    @keyframes example1 {
+    0% {left: -200px; top: 0px;}
+    25% {left: 100px; top: 200px;}
+    50% {left: 50%; top: 0px;}
+    100% {left: 100%; top: 200px; }
+}*/
+    @keyframes example1 {
+    0% {left: 0px; top: 0px; background-image: url("../Images/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg");}
+    25% {left: 400px; top: 0px; background-color: green; background-image: url("../Images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg");}
+    50% {left: 400px; top: 300px; background-color: yellow; background-image: url("../Images/WebImages/chris_hemsworth__angry_thor.jpg");}
+    75% {left: 0px; top: 300px; background-color: orange; background-image: url("../Images/WebImages/IMG-20140419-WA0002.jpg")}
+    100%{left: 0px; top: 0px; background-color: #000; background-image: url("../Images/WebImages/Wolverine-hugh-jackman-rock-hard-fitness-2.jpg");}
+}
+
+
+
+    
+</style>
+</head>
+<body>
+<h1>The keyframe rule</h1>
+<p> When an animation is finished, it changes back to its original style.</p>
+In this we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)).
+<div id="div1">
+    <!--<img src="Hulk/hulksmash2.gif" alt="image">-->
+</div>
+
+</body>
+</html>
+
