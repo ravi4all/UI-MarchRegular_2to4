@@ -15,9 +15,17 @@ body {
     float: right;
 }
 
+#container {
+    overflow: hidden;
+}
 .container {
     max-width: 960px;
     margin: 0 auto;
+}
+@media(max-width:992px){
+    .container {
+        max-width: 700px;
+    }
 }
 
 
@@ -67,8 +75,29 @@ body {
     color: lightgray;
 }
 
+@media(max-width:992px){
+    #top-bar ul li:last-child, #top-bar ul li:nth-child(2) {
+        display: none;
+    }
+    #top-bar ul li {
+        width: 32%;
+    }
+    #top-bar ul li:first-child {
+        text-align: left;
+    }
+    #top-bar ul li:nth-child(3) {
+        text-align: center;
+    }
+    #top-bar ul li:nth-child(4) {
+        text-align: right;
+    }
+}
+
 
 /* Header */
+#header{
+    position: relative;
+}
 #header .logo {
     text-align: center;
     width: 70%;
@@ -108,6 +137,32 @@ body {
 #header .user_section a {
     color: darkgray;
     text-decoration: none;
+}
+@media(max-width:992px){
+    #header {
+        min-height: 60px;
+        border-bottom: 1px solid #000;
+    }
+    #header h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    #header .meta-data {
+        display: none;
+    }
+    #header .user_section {
+        position: absolute;
+        padding: 5px 0px;
+        background-color: lightgrey;
+        bottom: 0px;
+        left: 0%;
+        border-top: 2px solid darkgrey;
+        width: 100%;
+        text-align: center;
+    }
+    #header .user_section a {
+        color: #000;
+}
 }
 
 
@@ -181,6 +236,25 @@ body {
     border: none;
 }
 
+.btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.btn .line {
+    display: block;
+    border: 2px solid #000;
+    margin-bottom: 5px;
+    width: 20px;
+}
+
+@media(max-width:992px){
+    #main-navigation ul{
+        display: none;
+    }
+}
 
 
 #main {
@@ -219,6 +293,34 @@ body {
 #main .news_1 img {
     float: right;
 }
+@media(max-width:992px){
+    #main {
+        float: none;
+        width: 100%;
+    }
+    #main h2 {
+        font-size: 17px;
+    }
+}
+@media(max-width:640px){
+    #content .container{
+        padding: 0px 15px;
+    }
+    #main .two-col .column {
+        float: none;
+        width: 100%;
+    }
+    #main:after {
+        border: none;
+    }
+    #main .two-col .column:last-child {
+        padding: 0px;
+    }
+    #main .two-col .column:last-child img {
+        width: 100%;
+    }
+}
+
 
 #sidebar {
     width: 28%;
@@ -231,6 +333,12 @@ body {
     background-color: lightgray;
 }
 
+@media(max-width:992px){
+    #sidebar {
+        float: none;
+        width: 100%;
+    }
+}
 
 .key {
     position: relative;
