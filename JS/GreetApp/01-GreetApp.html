@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function greet(){
+            a = document.getElementById("txtbox");
+            document.getElementById("result").innerHTML = a.value;
+        }
+    </script>
+</head>
+<body>
+   
+   <h1>Greet App</h1>
+   <h2>Hello <span id="result"></span></h2>
+   <input type="text" placeholder="Enter your name" id="txtbox">
+   <button onclick="greet()">Click Me</button>
+    
+</body>
+</html>

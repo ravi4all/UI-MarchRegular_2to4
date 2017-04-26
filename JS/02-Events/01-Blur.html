@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function valid(){
+            /*alert("Please enter your name");*/
+            a = document.getElementById("box_1");
+            if(a.value == ""){
+                document.getElementById("result").innerHTML = "Please enter your name";
+            }
+            else {
+                document.getElementById("result").innerHTML = "Proceed";
+            }
+        }
+    </script>
+</head>
+<body>
+   
+   <h1>Blur Event</h1>
+   
+   <input type="text" id="box_1" placeholder="Enter Your Name" onblur="valid()">
+   <span id="result"></span>
+    
+</body>
+</html>
