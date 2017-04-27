@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function tick(){
+            a = document.getElementsByName("checkbox");
+        for(i = 0; i < a.length; ++a){
+            if(a[i].checked){
+                alert("Checked "+a[i].value)
+            }
+        }
+        }
+        function tickAll(){
+            a = document.getElementsByName("checkbox");
+            for(i=0; i<a.length; ++i){
+                a[i].checked = true;
+            }
+        }
+    </script>
+</head>
+<body>
+   
+   <h1>Checked</h1>
+
+   <input type="checkbox" name="checkbox" value="Cr"> Cricket <br>
+   <input type="checkbox" name="checkbox" value="Fo"> Football <br>
+   <input type="checkbox" name="checkbox" value="Ch"> Chess <br>
+   <input type="checkbox" id="checkAll" onclick="tickAll()"> Select All <br>
+   
+   <button onclick="tick()">Click Me</button>
+    
+</body>
+</html>
