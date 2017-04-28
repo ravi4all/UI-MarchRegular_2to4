@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/model/model.js"></script>
+    <script src="js/model/empObject.js"></script>
+    <script src="js/controller/empController.js"></script>
+</head>
+<body>
+   
+   <h1>Employee Management</h1>
+   
+   
+       <table>
+           <tr>
+               <td>Enter ID</td>
+               <td><input type="text" placeholder="Enter id" id="box_1"></td>
+               <td><span id="error_1" class="common_error"></span></td>
+           </tr>
+           <tr>
+               <td>Enter Name</td>
+               <td><input type="text" placeholder="Enter name" id="box_2"></td>
+               <td><span id="error_2" class="common_error"></span></td>
+           </tr>
+           <tr>
+               <td>Enter Department</td>
+               <td><input type="text" placeholder="Enter Department" id="box_3"></td>
+               <td><span id="error_3" class="common_error"></span></td>
+           </tr>
+       </table>
+       <button id="add">Add Employee</button>
+   
+   <h2>Employee List</h2>
+   
+   <ul id="list"></ul>
+    
+</body>
+</html>
