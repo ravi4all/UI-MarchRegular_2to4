@@ -1,0 +1,7 @@
+li {
+    cursor: pointer;
+}
+li.to_delete {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
