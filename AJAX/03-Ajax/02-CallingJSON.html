@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <script src="../jquery-3.1.1.js"></script>
+</head>
+<body>
+    <p>Click on the button to load ajax −</p>
+		
+      <div id="div1">
+         Get Data through JSON
+      </div>
+		
+      <input type="button" id="btn" value="LoadData" />
+    
+    
+<script type = "text/javascript">
+    $(document).ready(function() {
+        $("#btn").click(function(event){
+           $.getJSON('data.json', function(data) {
+                  $('#div1').html('<p> Id: ' + data.id + '</p>');
+                  $('#div1').append('<p>Name : ' + data.name+ '</p>');
+                  $('#div1').append('<p> Salary: ' + data.salary+ '</p>');
+               });
+        });
+     });
+ </script>
+    
+</body>
+</html>
