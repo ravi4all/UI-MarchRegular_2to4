@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../angular.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+
+<h1>Ng-Repeat</h1>
+
+<input type="text" placeholder="Enter your avenger" ng-model="a_name"/>
+
+<button ng-click="add()">Add</button>
+
+<ul>
+    <li ng-repeat="i in arr">{{i.id}} {{i.name}} {{i.age}}</li>
+</ul>
+
+</body>
+</html>

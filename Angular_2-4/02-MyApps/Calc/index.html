@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../angular.min.js"></script>
+    <script src="calc.js"></script>
+</head>
+<body ng-app="myApp">
+
+<h1>Calculator</h1>
+
+<div ng-controller="myCtrl">
+
+    <input type="text" placeholder="Enter First Num" ng-model="f_num"/>
+    <input type="text" placeholder="Enter Second Num" ng-model="s_num"/>
+
+    <button ng-click="cal('+')">+</button>
+    <button ng-click="cal('-')">-</button>
+    <button ng-click="cal('/')">/</button>
+    <button ng-click="cal('*')">*</button>
+
+    <h3>Result is {{ans}}</h3>
+
+</div>
+
+</body>
+</html>
