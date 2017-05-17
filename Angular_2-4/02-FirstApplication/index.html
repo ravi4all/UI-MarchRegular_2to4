@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="../angular.min.js"></script>
+    <script src="todo.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    
+    <h1>Todo App</h1>
+    
+    <input type="text" placeholder="Enter Task" ng-model="taskName">
+    <input type="text" placeholder="Enter Description" ng-model="taskDesc">
+    
+    <button ng-click="add()">Add Task</button>
+    
+    <ul>
+        <!--<li>{{task}} {{desc}}</li>-->
+        <li ng-repeat="t in taskList">{{t}}</li>
+    </ul>
+    
+</body>
+</html>

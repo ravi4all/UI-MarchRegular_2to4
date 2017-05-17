@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="../angular.min.js"></script>
+    <script src="calc.js"></script>
+</head>
+<body ng-app="MyApp">
+    
+    <h1>Angular Day_1</h1>
+    <div ng-controller="MyCtrl">
+        <h2 ng-bind="msg"></h2>
+        <input type="text" placeholder="First Number" ng-model="fno">
+        <input  type="text" placeholder="Second Number" ng-model="sno">
+        
+        <button ng-click="add()">Add</button>
+        
+        <h2>Sum is {{sum}}</h2>
+    </div>
+    
+</body>
+</html>
