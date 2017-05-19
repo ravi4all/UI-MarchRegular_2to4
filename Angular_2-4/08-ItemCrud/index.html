@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="factory.js"></script>
+    <script src="controller.js"></script>
+</head>
+<body ng-app="itemApp" ng-controller="itemCtrl">
+
+<h1>Item CRUD</h1>
+
+<table>
+    <tr>
+        <td>Enter Item Name</td>
+        <td><input type="text" ng-model="name" placeholder="Enter Name"/></td>
+    </tr>
+    <tr>
+        <td>Enter Item Price</td>
+        <td><input type="text" ng-model="price" placeholder="Enter Price"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button ng-click="add()">Add Item</button></td>
+    </tr>
+</table>
+
+<table border="2" width="100%" cellspacing="5" cellpadding="5">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    <tr ng-repeat="i in result">
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.price}}</td>
+    </tr>
+</table>
+
+</body>
+</html>
