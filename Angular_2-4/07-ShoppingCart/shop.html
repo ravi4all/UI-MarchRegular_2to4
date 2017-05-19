@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="factory.js"></script>
+    <script src="controller.js"></script>
+</head>
+<body ng-app="shoppingApp" ng-controller="shopController">
+
+<button ng-click="show()">Show Data</button>
+
+<!--<div ng-bind="result"></div>-->
+
+<ul>
+    <li ng-repeat="r in result.data.mobiles">
+        {{r.name}} {{r.price}}
+    </li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../libs/angular.min.js"></script>
+    <script src="../app/app.js"></script>
+    <script src="../factory/factory.js"></script>
+    <script src="../service/service.js"></script>
+    <script src="../controller/controller.js"></script>
+</head>
+<body ng-app="calcApp">
+
+<h1>Calculator with MVC</h1>
+
+<div ng-controller="calcController">
+    <input type="text" placeholder="Enter number" ng-model="f_num"/>
+    <input type="text" placeholder="Enter number" ng-model="s_num"/>
+
+    <button ng-click="add()">Add</button>
+    <button ng-click="sub()">Sub</button>
+
+    <h2>Result is {{result}}</h2>
+</div>
+</body>
+</html>
