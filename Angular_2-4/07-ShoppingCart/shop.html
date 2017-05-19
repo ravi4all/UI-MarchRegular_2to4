@@ -14,9 +14,19 @@
 
 <!--<div ng-bind="result"></div>-->
 
+<select ng-model="orderValue">
+    <option value="name">Name</option>
+    <option value="price">Price</option>
+    <option value="vendor">Vendor</option>
+</select>
+
+<input type="text" placeholder="Type here" ng-model="search.price"/>
+
 <ul>
-    <li ng-repeat="r in result.data.mobiles">
-        {{r.name}} {{r.price}}
+    <li ng-repeat="r in result.data.mobiles | orderBy:orderValue | filter:search">
+        {{r.name | uppercase}} &nbsp; {{r.price | currency}} &nbsp; {{r.vendor}}
+        <br/>
+        <img ng-src={{r.image}} alt="image"/>
     </li>
 </ul>
 
