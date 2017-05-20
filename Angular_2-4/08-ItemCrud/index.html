@@ -7,6 +7,8 @@
     <script src="app.js"></script>
     <script src="factory.js"></script>
     <script src="controller.js"></script>
+
+    <link rel="stylesheet" href="custom.css"/>
 </head>
 <body ng-app="itemApp" ng-controller="itemCtrl">
 
@@ -23,20 +25,40 @@
     </tr>
     <tr>
         <td></td>
-        <td><button ng-click="add()">Add Item</button></td>
+        <td>
+            <button ng-click="add()">Add Item</button>
+            <button ng-click="delete()">Delete Item</button>
+        </td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>Search <input type="text" placeholder="Search Here" ng-model="search.name"/></td>
+        <td>Sort By<select ng-model="sort">
+            <option value="">Select Option</option>
+            <option value="id">ID</option>
+            <option value="name">Name</option>
+            <option value="price">Price</option>
+        </select></td>
     </tr>
 </table>
+
+<h2>Total Items {{result.length}}</h2>
+<h2>Items to delete {{countDeleted()}}</h2>
 
 <table border="2" width="100%" cellspacing="5" cellpadding="5">
     <tr>
         <th>Id</th>
         <th>Name</th>
         <th>Price</th>
+        <th>Delete</th>
     </tr>
-    <tr ng-repeat="i in result">
+    <tr ng-repeat="i in result | filter : search | orderBy:sort" ng-class="{red:i.isDelete}">
         <td>{{i.id}}</td>
         <td>{{i.name}}</td>
         <td>{{i.price}}</td>
+        <td><img src="btn-close.png" alt="image" ng-click="i.toggleDelete()"/></td>
     </tr>
 </table>
 
